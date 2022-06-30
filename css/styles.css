@@ -1,3 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --brand-color: #2196f3;
     --primary-color: #212121;
@@ -12,18 +21,57 @@ body {
 
 }
 
+p {
+    margin: 0px;
+}
 
+ul {
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+h4 {
+    margin: 0px;
+}
 /* Верхняя линия */
 
 .head {
+    display: flex;
+    align-items: baseline;
     background-color: #FFFFFF;
+    width: 1600px;
+    margin-bottom: 0;
+    outline: 2px solid blueviolet;
+    
 }
-
+.container-1 { 
+    width: 1170px;
+    margin-left: 215px;
+    margin-right: auto;
+    outline: 2px solid #f50830;}
 .container-x1 {
-    border: 1px solid #ECECEC;
+    
+    outline: 2px solid #f50830;
 }
+.navi-location { 
 
+
+}
 a.logo {
+    display: flex;
+    padding-left: 215px;
+    padding-top: 24px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -42,6 +90,10 @@ a.logo {
 
 .navigators {
     list-style-type: none;
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+    padding: 0px;
 }
 
 .navigator {
@@ -65,6 +117,10 @@ a.navigator:focus {
 }
 
 .head-infos {
+    display: flex;
+    gap: 50px;
+    margin-left: 331px;
+    padding: 0px;
     list-style-type: none;
 }
 
@@ -90,10 +146,18 @@ a.head-info:focus {
 /* Шапка Профиля */
 
 .solutions {
+    margin-top: 0px;
+    width: 1600px;
     background: #2F303A;
+    outline: 2px solid #f50830
 }
 
 .solutions-text {
+    margin: 0;
+    padding-left: 452px;
+    padding-top: 200px;
+    padding-right: 452px;
+    margin-bottom: 30px;
     font-family: inherit;
     font-weight: 900;
     font-size: 44px;
@@ -106,32 +170,46 @@ a.head-info:focus {
 /* Кнопка */
 
 .button-background {
+
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-bottom: 200px;
     cursor: pointer;
     background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    border-radius: 2px;
+    
 }
 
 .button-text {
+    padding: 10px 32px;
     cursor: pointer;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
+    text-align: center;
     color: #FFFFFF;
 }
 /* Особенности */
 
 .no-see {
     color: transparent;
+    margin: 0px;
 }
 
 .features {
+    margin: 94px 0px;
+    padding: 0px;
+    display: flex;
+    gap: 30px;
     list-style-type: none;
 }
 
 .feature {
+    width: 270px;
+    margin-bottom: 10px;
     font-family: inherit;
     font-weight: 700;
     font-size: 14px;
@@ -150,10 +228,16 @@ a.head-info:focus {
 /* Чем мы занимаемся*/
 
 .what-we-do {
-
+    width: 1200px;
+    outline: 2px solid red;
 }
 
 .head-doing {
+    width: 376px;
+    padding-top: 94px;
+    margin-left: 612px;
+    margin-right: 612px;
+    padding-bottom: 50px;
     font-family: inherit;
     font-weight: 700;
     font-size: 36px;
@@ -163,6 +247,12 @@ a.head-info:focus {
 }
 
 .works {
+        outline: 2px solid green;
+    display: flex;
+    gap: 30px;
+    padding-left: 215px;
+    margin-bottom: 94px;
+    margin-right: auto;
     list-style-type: none;
 }
 /* Наша команда */
@@ -172,6 +262,7 @@ a.head-info:focus {
 }
 
 .team-head {
+
     font-family: inherit;
     font-weight: 700;
     font-size: 36px;
