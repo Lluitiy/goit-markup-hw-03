@@ -21,36 +21,34 @@
 <body>
 <!-- Верхняя линия -->
 <header>
-   <div class="head">
+   <div class="container head">
       <a href="index.html" class="logo">Web<span class="logo-black">Studio</span></a>
-         <nav>
-            <ul class="navigators">
-               <li><a href="index.html" class="navigator current">Студия</a></li>
-               <li><a href="portfolio.html" class="navigator">Портфолио</a></li>
-               <li><a href="" class="navigator">Контакты</a></li>
-            </ul>
+      <nav>
+         <ul class="navigators">
+            <li><a href="index.html" class="navigator current">Студия</a></li>
+            <li><a href="portfolio.html" class="navigator">Портфолио</a></li>
+            <li><a href="" class="navigator">Контакты</a></li>
+         </ul>
 
-         </nav>
-            <ul class="head-infos">
-               <li><a href="email:info@devstudio.com" class="head-info">info@devstudio.com</a></li>
-               <li><a href="tel:+380961111111" class="head-info">+38 096 111 11 11</a></li>
-            </ul>
+      </nav>
+      <ul class="head-infos">
+         <li><a href="email:info@devstudio.com" class="head-info">info@devstudio.com</a></li>
+         <li><a href="tel:+380961111111" class="head-info">+38 096 111 11 11</a></li>
+      </ul>
    </div>
 </header>
 
 <main>
 <!-- Шапка Профиля -->
-<section>
-   <div class="hero">
+<section class="hero container">
+   <div >
       <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-      <!-- Кнопка-->
-      <div class="button-pos">   
-         <button type="button" class="button">Заказать услугу</button>
-      </div>
+      <!-- Кнопка-->  
+      <button type="button" class="button">Заказать услугу</button>
    </div>
 </section>
 <!--Особенности-->
-<section> 
+<section class="pad"> 
    <div class="container">
       <h2 class="no-see"> особенности</h2>
       <ul class="features">
@@ -74,7 +72,7 @@
    </div>
 </section>
 <!-- Чем мы занимаемся-->
-<section>
+<section class="section">
 <div class="container">
    <h2 class="head-doing">
       Чем мы занимаемся
@@ -102,8 +100,8 @@
 </div>
 </section>
 <!-- Наша команда -->
-<section>
-   <div class="our-team">
+<section class="section bg">
+   <div class="container">
       <h2 class="team-head">Наша команда</h2> 
       <ul class="team-members">
          <li class="card-shadow">
@@ -112,12 +110,14 @@
                   width="270"
                   height="260"
                   class="work-foto">
-            <h3 class="team-member">
-               Игорь Демьяненко
-            </h3>
+            <div class="card-bot">
+               <h3 class="team-member">
+                  Игорь Демьяненко
+               </h3>
                <p class="member-description">
                   Product Designer
                </p>
+            </div>
          </li>
          <li class="card-shadow">
             <img src="img/img_team/front_end_developer.jpg"
@@ -125,12 +125,14 @@
                   width="270"
                   height="260"
                   class="work-foto">
-            <h3 class="team-member">
-               Ольга Репина
-            </h3>
-               <p class="member-description">
-                  Frontend Developer
-               </p>
+            <div class="card-bot">
+               <h3 class="team-member">
+                  Ольга Репина
+               </h3>
+                  <p class="member-description">
+                     Frontend Developer
+                  </p>
+            </div>
          </li>
          <li class="card-shadow">
             <img src="img/img_team/marketing.jpg" 
@@ -138,12 +140,14 @@
                   width="270" 
                   height="260"
                   class="work-foto">
-            <h3 class="team-member">
-               Николай Тарасов
-            </h3>
+            <div class="card-bot">
+               <h3 class="team-member">
+                  Николай Тарасов
+               </h3>
                <p class="member-description">
                   Marketing
                </p>
+            </div>
          </li>
          <li class="card-shadow">
             <img src="img/img_team/ui_designer.jpg" 
@@ -151,21 +155,23 @@
                   width="270" 
                   height="260"
                   class="work-foto">
-            <h3 class="team-member">
-               Михаил Ермаков
-            </h3>
+            <div class="card-bot">
+               <h3 class="team-member">
+                  Михаил Ермаков
+               </h3>
                <p class="member-description">
                   UI Designer
                </p>
-         </li>
+               </li>
+            </div>
       </ul>
     </div>  
 </section>
 </main>
 
 <!-- Подвал -->
-<div>   
 <footer>
+ <div class="container">   
       <a href="index.html" class="footer-logo">Web<span class="logo-white">Studio</span></a>
       <address>
          <ul class="footer-ul">
@@ -183,8 +189,9 @@
             <li><a href="tel:+380991111111" class="footer-info">+38 099 111 11 11</a></li>
          </ul>
       </address>
-   </footer>
-</div>
+ </div>
+</footer>
+
 <!-- Указатели -->
 </body>
 </html>

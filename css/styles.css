@@ -13,6 +13,22 @@ html {
     --description-color: #757575;
 }
 
+p {
+    margin: 0px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0px;
+}
+
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
+}
+
 
 body {
     background: #FFFFFF;
@@ -21,23 +37,38 @@ body {
 
 }
 
-/* Верхняя линия */
-
-.head {
-    display: flex;
-    align-items: baseline;
+header {
+    padding-top: 24px;
     padding-bottom: 25px;
-    background-color: #FFFFFF;
-    margin: 0px auto;
-    border-bottom: 1px solid #ECECEC;;
-    outline: 2px solid blueviolet;
-    
+    border-bottom: 1px solid #ECECEC;
 }
 
+footer {
+    padding: 60px 0px;
+    background-color: #2F303A;
+}
+
+.section {
+    padding: 94px 0px;
+}
+/* Верхняя линия */
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    align-items: center;
+
+    outline: 2px solid salmon;
+}
+
+.head {
+     display: flex;
+    align-items: baseline;
+    background-color: #FFFFFF;
+}
 a.logo {
     display: flex;
-    padding-left: 215px;
-    padding-top: 24px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -110,7 +141,8 @@ a.head-info:focus {
 /* Шапка Профиля */
 
 .hero {
-
+    padding: 200px 0px;
+    
     background: #2F303A;
 
 }
@@ -119,7 +151,7 @@ a.head-info:focus {
     display: block;
     text-align: center;
     margin: 0px auto;
-    padding: 200px 0px 30px;
+    padding-bottom: 30px;
     width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -150,20 +182,12 @@ a.head-info:focus {
     text-align: center;
     color: #FFFFFF;
 }
-
-.button-pos {
-    padding-bottom: 200px;
-}
-
 /* Особенности */
 
-.container {
-    width: 1200px;
-    margin: 0px auto;
-    padding: 0px 15px;
-
-    outline: 2px solid salmon;
+.pad {
+    padding-top: 94px;
 }
+
 .no-see {
     color: transparent;
     position: absolute;
@@ -180,8 +204,6 @@ a.head-info:focus {
     }
 
 .features {
-    padding: 0px;
-    margin: 94px 0px;
     display: flex;
     gap: 30px;
     list-style-type: none;
@@ -189,7 +211,7 @@ a.head-info:focus {
 
 .feature {
     width: 270px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -208,7 +230,7 @@ a.head-info:focus {
 .head-doing {
     text-align: center;
     margin: 0px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -220,22 +242,17 @@ a.head-info:focus {
     display: flex;
     gap: 30px;
     margin: 0px;
-    padding: 0px 0px 94px;
-    margin-right: auto;
     list-style-type: none;
 }
 .work-foto {
     display: block;
 }
 /* Наша команда */
-
-.our-team {
-    background: #F5F4FA;
+.bg {
+    background-color: #F5F4FA;
 }
-
 .team-head {
-    padding: 94px 0px 50px;
-    margin: 0px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -245,11 +262,6 @@ a.head-info:focus {
 
 .team-members {
     display: flex;
-    gap: 30px;
-    padding-left: 0px;
-    padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
     width: 1170px;
     list-style-type: none;
 
@@ -258,13 +270,13 @@ a.head-info:focus {
 }
 
 .card-shadow {
+    width: calc((100%-90px)/4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
 }
 
 .team-member {
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -280,16 +292,17 @@ a.head-info:focus {
     letter-spacing: 0.03em;
     color: var(--description-color);
 }
-/* Подвал */
-footer {
-    background-color: #2F303A;
+
+.card-bot {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
+/* Подвал */
 
 a.footer-logo {
     display: flex;
-    margin-left: 215px;
     margin-bottom: 20px;
-    padding-top: 60px;
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -313,9 +326,6 @@ a.location {
     display: flex;
     flex-direction: column;
     gap: 9px;
-    margin-left: 215px;
-    padding-bottom: 60px;
-    padding-left: 0px;
     list-style-type: none;
 }
 
@@ -337,16 +347,17 @@ a.footer-info:focus {
 
 /*  ПОРТФОЛИО */
 /* Проекты */ 
+.main-project {
+    padding: 94px 0px;
+}
 .project-buttons {
     cursor: pointer;
     list-style-type: none;
     display: flex;
     gap: 8px;
-    padding-left: 0px;
-    margin: 94px auto 0px;
-    
+    padding: 0px;
+    margin: 0px auto 56px;
     justify-content: center;
-    padding-bottom: 34px;
     outline: solid 2px yellow;
 }
 
@@ -403,9 +414,6 @@ a.footer-info:focus {
     width: 370px;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
-
-
-    
 }
 
 .project-name {
